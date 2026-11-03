@@ -109,6 +109,8 @@ export default function Footer({ site, phone, email, data, contact }) {
         <div className="w-full lg:w-[360px] shrink-0 px-8 md:px-12 py-12 lg:border-r border-white/15 flex flex-col gap-5">
           <a href="/" className="inline-block" aria-label={displayBrand}>
             <img
+              data-aut-footer-logo
+              data-aut-filename={logo?.name || undefined}
               {...(logo?.url
                 ? responsiveImage(logo, LOGO_SIZES)
                 : { src: '/assets/logo.webp', width: 200, height: 60 })}
@@ -128,7 +130,7 @@ export default function Footer({ site, phone, email, data, contact }) {
               {displayBrand}
             </p>
             {address && (
-              <p className="text-[13px] text-white/80 leading-relaxed">{address}</p>
+              <p data-aut-footer-address className="text-[13px] text-white/80 leading-relaxed">{address}</p>
             )}
           </div>
 
