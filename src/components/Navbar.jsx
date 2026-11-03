@@ -221,7 +221,7 @@ export default function Navbar({ site, phone, email, waLink, socials, data }) {
         </div>
 
         {/* CTA */}
-        <div className="hidden md:flex items-center gap-3">
+        <div data-aut-nav-phone className="hidden md:flex items-center gap-3">
           <a
             href={telHref(sitePhone)}
             className="flex items-center justify-center gap-[6px] w-[171px] h-[40px] px-3 py-2 border border-brand-blue rounded-md text-brand-blue text-[14px] font-semibold leading-[1.2] hover:bg-slate-50 transition-all whitespace-nowrap"

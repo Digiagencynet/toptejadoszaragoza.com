@@ -128,7 +128,7 @@ export default function Footer({ site, phone, email, data, contact }) {
               {displayBrand}
             </p>
             {address && (
-              <p className="text-[13px] text-white/80 leading-relaxed">{address}</p>
+              <p data-aut-footer-address className="text-[13px] text-white/80 leading-relaxed">{address}</p>
             )}
           </div>
 
